@@ -23,6 +23,6 @@ class PriceTable(models.Model):
         return self.pt_title
 
     class Meta:
-        verbose_name = 'Цены'
-        verbose_name_plural = 'Цены'
+        verbose_name = 'Услуги'
+        verbose_name_plural = 'Услуги'
 
