@@ -14,7 +14,7 @@ class PriceCard(models.Model):
         verbose_name_plural = 'Цены'
 
 
-class PriceTable:
+class PriceTable(models.Model):
     pt_title = models.CharField(max_length=100, verbose_name='Услуга')
     pt_old_price = models.CharField(max_length=100, verbose_name='Старая цена')
     pt_new_price = models.CharField(max_length=100, verbose_name='Новая цена')
