@@ -10,14 +10,9 @@ def sendtelegram(tg_name, tg_phone):
     api = 'https://api.telegram.org/bot'
     method = api + token + '/sendMessage'
 
-    a = text.find('{')
-    b = text.find('}')
-    c = text.rfind('{')
-    d = text.rfind('}')
-
-    part1 = text[0:a]
-    part2 = text[b+1:c]
-    part3 = text[d:-1]
+    part1 = text[0:text.find('{')]
+    part2 = text[text.find('}')+1:text.rfind('{')]
+    part3 = text[text.rfind('}'):-1]
 
     text_slice = part1 + tg_name + part2 + tg_phone + part3
 
