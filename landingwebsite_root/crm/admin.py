@@ -3,6 +3,10 @@ from .models import Order, StatusCrm, ComentCrm
 
 
 # Register your models here.
-admin.site.register(Order)
+class OrderAdm(admin.ModelAdmin):
+    list_display = ('id', 'order_status', 'order_phone', 'order_name', 'order_dt')
+
+
+admin.site.register(Order, OrderAdm)
 admin.site.register(StatusCrm)
 admin.site.register(ComentCrm)
