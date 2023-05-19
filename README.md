@@ -1,1 +1,1 @@
-# django-website-created-on-work
+Первый учебный проект джанго. Одностраничный сайт http://django-test.ru/
